@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "490923038008",
+    "project_id": "humin-23201",
+    "storage_bucket": "humin-23201.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490923038008:android:1d78dc0dcf06aac4861dcd",
+        "android_client_info": {
+          "package_name": "com.example.humin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490923038008-plp4e3371ej5l4sk8v03vapskaikp6s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-swwDDKPo_s-bKZs079OP1kUkBWnaVL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490923038008-plp4e3371ej5l4sk8v03vapskaikp6s5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    android:id="@+id/DashboardWrapper"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/dashHeading"
+        style="@style/titleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola,\nWelcome Asad"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chipsLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profileTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_textview"
+            style="@style/customTxtStyle"
+            android:text="@string/profile" />
+
+        <TextView
+            android:id="@+id/listAllContacts"
+            style="@style/customTxtStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_textview"
+            android:text="@string/contacts" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addContactLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addContactHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/titleStyle2"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="25sp"
+            android:text="Add New Contact" />
+
+        <EditText
+            android:id="@+id/contactUsernameEditTxt"
+            style="@style/inputStyle"
+            android:background="@drawable/custom_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/custom_user_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/usernameTxt" />
+        <EditText
+            android:id="@+id/contactEmailEditTxt"
+            style="@style/inputStyle"
+            android:background="@drawable/custom_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:autofilledHighlight="@color/trans"
+            android:hint="@string/emailTxt" />
+        <EditText
+            android:id="@+id/contactPhoneEditTxt"
+            style="@style/inputStyle"
+            android:background="@drawable/custom_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/custom_phone_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:autofilledHighlight="@color/trans"
+            android:inputType="phone|text"
+            android:hint="@string/phoneTxt" />
+        <Button
+            android:id="@+id/addContactBtn"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saveBtn" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
